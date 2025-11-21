@@ -296,7 +296,48 @@ O manualmente:
 pip install numpy pillow cryptography customtkinter
 ```
 
-## 🚀 Uso
+## � Versiones Disponibles
+
+Este proyecto incluye **dos versiones** para diferentes necesidades:
+
+### 🖥️ Versión GUI (Interfaz Gráfica)
+**Archivo:** `file2png-gui.py`
+
+- ✅ Interfaz moderna con tema oscuro
+- ✅ Selector interactivo de nivel de compresión (1-9)
+- ✅ Barras de progreso en tiempo real
+- ✅ Botón para mostrar/ocultar contraseña
+- ✅ Soporte de scroll automático
+- ✅ Amigable para principiantes
+
+### ⌨️ Versión CLI (Línea de Comandos)
+**Archivo:** `file2png.py`
+
+- ✅ Rápida y ligera
+- ✅ Scriptable y automatizable
+- ✅ Funciona en servidores (sin GUI)
+- ⚠️ Nivel de compresión fijo en el código (predeterminado: nivel 1)
+- ✅ Para usuarios avanzados
+
+### 📊 Tabla Comparativa
+
+| Característica | GUI (`file2png-gui.py`) | CLI (`file2png.py`) |
+|----------------|-------------------------|---------------------|
+| **Facilidad de Uso** | ⭐⭐⭐⭐⭐ Amigable para principiantes | ⭐⭐⭐ Requiere conocimientos de línea de comandos |
+| **Nivel de Compresión** | ✅ Ajustable con slider (1-9) | ⚠️ Fijo en código (requiere edición) |
+| **Retroalimentación de Progreso** | ✅ Barras de progreso visuales | ⚠️ Solo salida de texto |
+| **Visibilidad de Contraseña** | ✅ Botón de alternar (👁️) | ❌ Oculta en terminal |
+| **Automatización** | ❌ Operación manual | ✅ Scriptable |
+| **Uso en Servidor** | ❌ Requiere pantalla | ✅ Funciona sin GUI |
+| **Velocidad** | Rápido | Ligeramente más rápido |
+
+**Recomendación:**
+- 🎨 **Usa GUI** si quieres facilidad de uso y retroalimentación visual
+- ⚡ **Usa CLI** si necesitas automatización o despliegue en servidor
+
+---
+
+## �🚀 Uso
 
 ### 🖥️ Versión GUI (Recomendada para Principiantes)
 
