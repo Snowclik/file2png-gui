@@ -44,7 +44,7 @@ Or manually:
 pip install numpy pillow cryptography customtkinter
 ```
 
-## � Available Versions / Versiones Disponibles
+## 🐧 Available Versions / Versiones Disponibles
 
 This project includes **two versions** to suit different needs:
 
@@ -296,7 +296,7 @@ O manualmente:
 pip install numpy pillow cryptography customtkinter
 ```
 
-## � Versiones Disponibles
+## 🐧 Versiones Disponibles
 
 Este proyecto incluye **dos versiones** para diferentes necesidades:
 
