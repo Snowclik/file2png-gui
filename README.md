@@ -44,9 +44,52 @@ Or manually:
 pip install numpy pillow cryptography customtkinter
 ```
 
-## 🚀 Usage
+## � Available Versions / Versiones Disponibles
 
-### Graphical Interface (Recommended)
+This project includes **two versions** to suit different needs:
+
+Este proyecto incluye **dos versiones** para diferentes necesidades:
+
+### 🖥️ GUI Version (Graphical Interface)
+**File:** `file2png-gui.py`
+
+- ✅ Modern dark theme interface
+- ✅ Interactive compression level selector (1-9)
+- ✅ Real-time progress bars
+- ✅ Show/hide password button
+- ✅ Auto-scroll support
+- ✅ Beginner-friendly
+
+### ⌨️ CLI Version (Command Line)
+**File:** `file2png.py`
+
+- ✅ Fast and lightweight
+- ✅ Scriptable and automatable
+- ✅ Server-friendly (no GUI required)
+- ⚠️ Compression level fixed in code (default: level 1)
+- ✅ Advanced users
+
+### 📊 Comparison Table / Tabla Comparativa
+
+| Feature / Característica | GUI (`file2png-gui.py`) | CLI (`file2png.py`) |
+|--------------------------|-------------------------|---------------------|
+| **Ease of Use / Facilidad** | ⭐⭐⭐⭐⭐ Beginner-friendly | ⭐⭐⭐ Requires command line knowledge |
+| **Compression Level / Nivel de Compresión** | ✅ Adjustable via slider (1-9) | ⚠️ Fixed in code (requires editing) |
+| **Progress Feedback / Retroalimentación** | ✅ Visual progress bars | ⚠️ Text output only |
+| **Password Visibility / Ver Contraseña** | ✅ Toggle button (👁️) | ❌ Hidden in terminal |
+| **Automation / Automatización** | ❌ Manual operation | ✅ Scriptable |
+| **Server Use / Uso en Servidor** | ❌ Requires display | ✅ Works headless |
+| **Speed / Velocidad** | Fast / Rápido | Slightly faster / Ligeramente más rápido |
+
+**Recommendation / Recomendación:**
+- 🎨 **Use GUI** if you want ease of use and visual feedback
+- ⚡ **Use CLI** if you need automation or server deployment
+
+---
+
+## 🚀 Usage / Uso
+
+### 🖥️ GUI Version (Recommended for Beginners)
 
 ```bash
 python file2png-gui.py
@@ -61,7 +104,9 @@ The interface will guide you step by step:
 5. **Compression level** (encode only): Adjust according to your needs
 6. **Process**: Click 🚀 Process
 
-### Command Line
+### ⌨️ CLI Version (For Advanced Users & Automation)
+
+> **Note:** The CLI version uses a fixed compression level (default: 1). To change it, edit the `compress_level` parameter in the code.
 
 #### Encode (File → PNG)
 
@@ -87,15 +132,24 @@ python file2png.py <encrypted.png> <output-folder> --password <your-password>
 python file2png.py encrypted.png ./recovered --password MySecurePass123
 ```
 
-## 📊 Compression Levels
+## 📊 Compression Levels (GUI Only)
 
-| Level | Speed | PNG Size | Time (100 MB) |
-|-------|-------|----------|---------------|
-| 1-3   | ⚡ Fast | ~2x file | ~15-20 sec |
-| 4-6   | ⚠️ Medium | ~1.7x file | ~1-2 min |
-| 7-9   | 🐌 Slow | ~1.5x file | ~3-5 min |
+The GUI version allows you to choose the compression level. Higher levels = smaller file, but slower processing.
 
-**Recommendation**: Use level 1 for maximum speed. Size difference is minimal compared to time saved.
+| Level | Speed | PNG Size | Seconds per 100 MB |
+|-------|-------|----------|-------------------|
+| 1-3   | ⚡ Fast | ~2.0x original | 15-20 sec |
+| 4-6   | ⚠️ Medium | ~1.7x original | 60-120 sec |
+| 7-9   | 🐌 Slow | ~1.5x original | 180-300 sec |
+
+**Examples:**
+- 100 MB file at level 1: ~15-20 seconds
+- 500 MB file at level 1: ~75-100 seconds
+- 1 GB file at level 1: ~150-200 seconds
+
+**Recommendation**: Use level 1 for maximum speed. The size difference is minimal compared to time saved.
+
+> **CLI Note:** The CLI version uses level 1 by default. To change it, edit `compress_level=1` in the code.
 
 ## 🔒 Security
 
@@ -244,7 +298,7 @@ pip install numpy pillow cryptography customtkinter
 
 ## 🚀 Uso
 
-### Interfaz Gráfica (Recomendado)
+### 🖥️ Versión GUI (Recomendada para Principiantes)
 
 ```bash
 python file2png-gui.py
@@ -259,7 +313,9 @@ La interfaz te guiará paso a paso:
 5. **Nivel de compresión** (solo codificar): Ajusta según tus necesidades
 6. **Procesar**: Haz clic en 🚀 Procesar
 
-### Línea de Comandos
+### ⌨️ Versión CLI (Para Usuarios Avanzados y Automatización)
+
+> **Nota:** La versión CLI usa un nivel de compresión fijo (predeterminado: 1). Para cambiarlo, edita el parámetro `compress_level` en el código.
 
 #### Codificar (Archivo → PNG)
 
@@ -285,15 +341,24 @@ python file2png.py <cifrado.png> <carpeta-salida> --password <tu-contraseña>
 python file2png.py cifrado.png ./recuperados --password MiClaveSegura123
 ```
 
-## 📊 Niveles de Compresión
+## 📊 Niveles de Compresión (Solo GUI)
 
-| Nivel | Velocidad | Tamaño PNG | Tiempo (100 MB) |
-|-------|-----------|------------|-----------------|
-| 1-3   | ⚡ Rápido | ~2x archivo | ~15-20 seg |
-| 4-6   | ⚠️ Medio  | ~1.7x archivo | ~1-2 min |
-| 7-9   | 🐌 Lento  | ~1.5x archivo | ~3-5 min |
+La versión GUI te permite elegir el nivel de compresión. Niveles más altos = archivo más pequeño, pero procesamiento más lento.
+
+| Nivel | Velocidad | Tamaño PNG | Segundos por 100 MB |
+|-------|-----------|------------|---------------------|
+| 1-3   | ⚡ Rápido | ~2.0x original | 15-20 seg |
+| 4-6   | ⚠️ Medio  | ~1.7x original | 60-120 seg |
+| 7-9   | 🐌 Lento  | ~1.5x original | 180-300 seg |
+
+**Ejemplos:**
+- Archivo de 100 MB en nivel 1: ~15-20 segundos
+- Archivo de 500 MB en nivel 1: ~75-100 segundos
+- Archivo de 1 GB en nivel 1: ~150-200 segundos
 
 **Recomendación**: Usa nivel 1 para máxima velocidad. La diferencia de tamaño es mínima comparada con el tiempo ahorrado.
+
+> **Nota CLI:** La versión CLI usa nivel 1 por defecto. Para cambiarlo, edita `compress_level=1` en el código.
 
 ## 🔒 Seguridad
 
