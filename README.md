@@ -337,7 +337,7 @@ Este proyecto incluye **dos versiones** para diferentes necesidades:
 
 ---
 
-## �🚀 Uso
+## 🚀 Uso
 
 ### 🖥️ Versión GUI (Recomendada para Principiantes)
 
